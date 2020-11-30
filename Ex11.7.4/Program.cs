@@ -23,7 +23,9 @@ namespace Ex11._7._4
             Console.WriteLine($"Your name is {name} and age is {age}");
             Console.Write("What is your favorite day of week? ");
 
-            DayOfWeek favoriteDay = (DayOfWeek)Enum.GetValues(typeof(DayOfWeek)).GetValue(Convert.ToInt32(Console.ReadLine())-1);
+            //DayOfWeek favoriteDay = (DayOfWeek)Enum.GetValues(typeof(DayOfWeek)).GetValue(Convert.ToInt32(Console.ReadLine())-1);
+            DayOfWeek favoriteDay = (DayOfWeek)Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine($"Your favorite day is {favoriteDay} ");
 
             Console.ReadKey();
